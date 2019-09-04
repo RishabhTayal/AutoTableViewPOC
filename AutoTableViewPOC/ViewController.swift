@@ -47,10 +47,7 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         
         let item = array[indexPath.row]
         let url = URL.init(string: item["imageUrl"] as! String)!
-        //        cell.myImage.kf.setImage(with: url) { (result) in
-        //
-        //            switch result {
-        //            case .success(let value):
+        
         cell.myImage.image = nil
         DispatchQueue.global().async {
             let data = try! Data.init(contentsOf: url)
@@ -63,17 +60,11 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
                     cell.heightConstraint.constant =  multiplier * image.size.height
                     
                     cell.myImage.image = image
-
-                                        cell.layoutIfNeeded()
-                    cell.contentView.layoutIfNeeded()
-                    cell.setNeedsLayout()
-                    cell.contentView.setNeedsLayout()
+                    
+                    cell.layoutIfNeeded()
                 }
             }
         }
-        //            default: break
-        //            }
-        //        }
         
         return cell
     }
