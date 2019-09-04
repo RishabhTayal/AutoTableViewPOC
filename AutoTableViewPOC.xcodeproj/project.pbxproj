@@ -3,18 +3,21 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45D9C42012D8B6B30F9618EE /* Pods_AutoTableViewPOC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6CA6E9FC3E55D9963BBA4A4 /* Pods_AutoTableViewPOC.framework */; };
 		69342F7B231EDB4500B91E71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69342F7A231EDB4500B91E71 /* AppDelegate.swift */; };
 		69342F7D231EDB4500B91E71 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69342F7C231EDB4500B91E71 /* ViewController.swift */; };
 		69342F80231EDB4500B91E71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69342F7E231EDB4500B91E71 /* Main.storyboard */; };
 		69342F82231EDB4700B91E71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69342F81231EDB4700B91E71 /* Assets.xcassets */; };
 		69342F85231EDB4700B91E71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69342F83231EDB4700B91E71 /* LaunchScreen.storyboard */; };
+		69342F8D231EDBF800B91E71 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69342F8C231EDBF800B91E71 /* Cell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		20405AD26A2723B16B6B5A2E /* Pods-AutoTableViewPOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoTableViewPOC.debug.xcconfig"; path = "Target Support Files/Pods-AutoTableViewPOC/Pods-AutoTableViewPOC.debug.xcconfig"; sourceTree = "<group>"; };
 		69342F77231EDB4500B91E71 /* AutoTableViewPOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoTableViewPOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69342F7A231EDB4500B91E71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		69342F7C231EDB4500B91E71 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,9 @@
 		69342F81231EDB4700B91E71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		69342F84231EDB4700B91E71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		69342F86231EDB4700B91E71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69342F8C231EDBF800B91E71 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		B6CA6E9FC3E55D9963BBA4A4 /* Pods_AutoTableViewPOC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutoTableViewPOC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F973E900DE7402EF81F6499B /* Pods-AutoTableViewPOC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoTableViewPOC.release.xcconfig"; path = "Target Support Files/Pods-AutoTableViewPOC/Pods-AutoTableViewPOC.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45D9C42012D8B6B30F9618EE /* Pods_AutoTableViewPOC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				69342F79231EDB4500B91E71 /* AutoTableViewPOC */,
 				69342F78231EDB4500B91E71 /* Products */,
+				D94E22AA356BA8D7C1E36ABE /* Pods */,
+				E9DB8D3208FC79BECA16E60B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +65,30 @@
 			children = (
 				69342F7A231EDB4500B91E71 /* AppDelegate.swift */,
 				69342F7C231EDB4500B91E71 /* ViewController.swift */,
+				69342F8C231EDBF800B91E71 /* Cell.swift */,
 				69342F7E231EDB4500B91E71 /* Main.storyboard */,
 				69342F81231EDB4700B91E71 /* Assets.xcassets */,
 				69342F83231EDB4700B91E71 /* LaunchScreen.storyboard */,
 				69342F86231EDB4700B91E71 /* Info.plist */,
 			);
 			path = AutoTableViewPOC;
+			sourceTree = "<group>";
+		};
+		D94E22AA356BA8D7C1E36ABE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				20405AD26A2723B16B6B5A2E /* Pods-AutoTableViewPOC.debug.xcconfig */,
+				F973E900DE7402EF81F6499B /* Pods-AutoTableViewPOC.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E9DB8D3208FC79BECA16E60B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B6CA6E9FC3E55D9963BBA4A4 /* Pods_AutoTableViewPOC.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 69342F89231EDB4700B91E71 /* Build configuration list for PBXNativeTarget "AutoTableViewPOC" */;
 			buildPhases = (
+				EA8B2CD68026D53D07B29FA0 /* [CP] Check Pods Manifest.lock */,
 				69342F73231EDB4500B91E71 /* Sources */,
 				69342F74231EDB4500B91E71 /* Frameworks */,
 				69342F75231EDB4500B91E71 /* Resources */,
+				D1EA0B6ADF95A2A5837F2655 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,6 +159,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D1EA0B6ADF95A2A5837F2655 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AutoTableViewPOC/Pods-AutoTableViewPOC-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AutoTableViewPOC/Pods-AutoTableViewPOC-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AutoTableViewPOC/Pods-AutoTableViewPOC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA8B2CD68026D53D07B29FA0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AutoTableViewPOC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		69342F73231EDB4500B91E71 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -137,6 +208,7 @@
 			files = (
 				69342F7D231EDB4500B91E71 /* ViewController.swift in Sources */,
 				69342F7B231EDB4500B91E71 /* AppDelegate.swift in Sources */,
+				69342F8D231EDBF800B91E71 /* Cell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +352,7 @@
 		};
 		69342F8A231EDB4700B91E71 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20405AD26A2723B16B6B5A2E /* Pods-AutoTableViewPOC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +370,7 @@
 		};
 		69342F8B231EDB4700B91E71 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F973E900DE7402EF81F6499B /* Pods-AutoTableViewPOC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

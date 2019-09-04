@@ -1,0 +1,6 @@
+framework module Pods_AutoTableViewPOC {
+  umbrella header "Pods-AutoTableViewPOC-umbrella.h"
+
+  export *
+  module * { export * }
+}
